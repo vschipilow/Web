@@ -1,0 +1,88 @@
+:root {
+    --bronzeBlack: #1A1A00;
+    --charcoalGrey: #444444;
+    --grey: #888888;
+    --linkBlue: #00B0FF;
+    --nearWhite: #EEEEEE;
+    --pureGreen: #00FF00;
+    --padding: 0.5em;
+    --realWhite: #FEFEFE;
+}
+
+a {
+    color: var(--linkBlue);
+    /* border-style: solid; */
+    padding: var(--padding);
+	text-decoration: none;
+	font: inherit;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	background-color: var(--bronzeBlack);
+	color: var(--nearWhite);
+}
+
+button {
+    background: inherit;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    color: inherit;
+}
+
+div {
+    padding-bottom: var(--padding);
+    padding-left: var(--padding);
+    padding-top: var(--padding);
+}
+
+h1 {
+    font-size: 200%;
+    padding-left: var(--padding);
+}
+
+h2 {
+    font-size: 175%;
+    padding-left: var(--padding);
+}
+
+h3 {
+    font-size: 150%;
+    padding-left: var(--padding);
+}
+
+h4 {
+    font-size: 125%;
+    padding-left: var(--padding);
+}
+
+input {
+    background-color: inherit;
+    border: 1px solid var(--grey);
+    color: inherit;
+}
+
+select {
+    color: inherit;
+    background: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+th {
+    padding: var(--padding);
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    color: var(--realWhite);
+    background-color: var(--charcoalGrey);
+}
