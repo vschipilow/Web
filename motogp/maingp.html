@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		MotoGP
+	</title>
+	<link rel="stylesheet" href="../stylesheet/stylesheet.css">
+	<script src="./javascript/motogp.js"></script>
+</head>
+<body onload="onload()">
+	<h2>
+		MotoGP
+	</h2>
+	<table>
+		<tr>
+			<td>
+				<select id="year" onchange="changeComp();">
+					<option value="2026" selected>
+						2026
+					</option>
+					<option value="2025">
+						2025
+					</option>
+					<option value="2024">
+						2024
+					</option>
+					<option value="2023">
+						2023
+					</option>
+					<option value="2022">
+						2022
+					</option>
+				</select>
+			</td>
+			<td>
+				<select id="comp" onchange="changeComp();">
+					<option value="MotoGP" selected>
+						MotoGP
+					</option>
+					<option value="Moto2">
+						Moto2
+					</option>
+					<option value="Moto3">
+						Moto3
+					</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<thead>
+			<tr>
+				<th>
+                    <button onclick="sortByNo()">
+                        No.
+                    </button>
+                </th>
+                <th>
+                    <button onclick="sortByFirstName()">
+                        First&nbsp;Name
+                    </button>
+                </th>
+                <th>
+                    <button onclick="sortBySurname()">
+                        Surname
+                    </button>
+                </th>
+                <th>
+                    <button onclick="sortByAge()">
+                        Age
+                    </button>
+                </th>
+                <th>
+                    <button onclick="sortByCountry()">
+                        Country
+                    </button>
+                </th>
+                <th>
+                    <button onclick="sortByBike()">
+                        Bike
+                    </button>
+                </th>
+                <th>
+                    <button onclick="sortByTeam()">
+                        Team
+                    </button>
+                </th>
+                <th>
+                    <button onclick="sortByTestRider()">
+                        Test&nbsp;Rider
+                    </button>
+                </th>
+			</tr>
+		</thead>
+		<tbody id="repeater">
+			<tr>
+				<td style="text-align: right;">
+                    ${row.Number}
+                </td>
+                <td>
+                    ${nbsp(row.FirstName)}
+                </td>
+                <td>
+                    ${nbsp(row.Surname)}
+                </td>
+                <td style="text-align: center;">
+                    ${row.Age}
+                </td>
+                <td>
+                    ${nbsp(row.Country)}
+                </td>
+                <td>
+                    ${nbsp(row.Bike)}
+                </td>
+                <td>
+                    ${nbsp(row.Team)}
+                </td>
+                <td>
+                    ${nbsp(row.TestRider)}
+                </td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

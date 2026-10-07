@@ -5,7 +5,9 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 
 const port = 8081;
-exec('open "http://localhost:' + port + '/index.html"');
+const url = 'http://localhost:' + port + '/index.html';
+console.log(url);
+exec('open "' + url + '"');
 
 createServer(async (req, res) => {
     try {
